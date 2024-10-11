@@ -48,17 +48,7 @@
     glb.headerReady = true;
     glb.headerCdn = true;
     glb.tenant = "receitas";
-  </script> <script>
-    var oidcSettings = {
-      clientId: 'gshow-receitas',
-      resource: 'gshow-receitas',
-      authServerUrl: 'https://goidc.globo.com/auth/realms/globo.com/protocol/openid-connect/auth',
-      oidcProvider: 'https://goidc.globo.com/auth/realms/globo.com',
-      scope: 'openid profile',
-      redirectUri: window.location.origin.concat('/login-callback.ghtml'),
-      onLoad: "check-sso"
-    };
-  </script> <script>
+  </script>  <script>
     document.addEventListener('DOMContentLoaded', function() {
         document.dispatchEvent(new CustomEvent('glb.headerDom.ready'));
       }, false);
