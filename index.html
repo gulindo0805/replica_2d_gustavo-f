@@ -184,40 +184,23 @@
             color: purple; /* Cor do título em roxo */
             margin: 0; /* Remove a margem padrão */
         }
+.line-veja-mais {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
 
-        .line-veja-mais {
-            display: flex;
-            justify-content: center;
-            margin: 20px ;
-        }
+.line-veja-mais div {
+    background-color: yellow; /* Cor de fundo da linha */
+    padding: 20px 20px; /* Espaçamento interno da linha */
+    border-radius: 5px; /* Bordas arredondadas */
+    position: relative; /* Permite o uso de pseudo-elementos */
+    font-weight: bold; /* Deixa o texto mais grosso */
+    font-size: 16px; /* Tamanho do texto */
+    color: white; /* Cor do texto "veja mais" em branco */
+}
 
-        .line-veja-mais div {
-            background-color: yellow; /* Cor de fundo da linha */
-            padding: 20px 20px; /* Espaçamento interno da linha */
-            border-radius: 5px; /* Bordas arredondadas */
-            position: relative; /* Permite o uso de pseudo-elementos */
-            font-weight: bold; /* Deixa o texto mais grosso */
-            font-size: 16px; /* Tamanho do texto */
-        }
 
-        .line-veja-mais div::before,
-        .line-veja-mais div::after {
-            content: ""; /* Adiciona pseudo-elementos */
-            position: absolute;
-            top: 50%; /* Centraliza verticalmente */
-            height: 1px; /* Altura da linha */
-            background-color: yellow; /* Cor da linha */
-            width: 50%; /* Largura da linha */
-           
-        }
-
-        .line-veja-mais div::before {
-            left: -50%; /* Move a linha para a esquerda */
-        }
-
-        .line-veja-mais div::after {
-            right: -50%; /* Move a linha para a direita */
-        }
 
         footer {
             background-color: yellow;
