@@ -4,7 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: purple;
+        }
+
+        .header-top {
+            background-color: yellow; /* Altera o fundo para amarelo */
+            display: flex;
+            padding: 5px 20px;
+            align-items: center; /* Alinha verticalmente o conteúdo */
+        }
+
+        header {
+            background-color: yellow;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .nav-links {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .nav-links span {
+            margin: 0 10px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            margin-left: auto; /* Empurra a barra de busca para a direita */
+        }
+
+        .search-box input[type="text"] {
+            padding: 5px;
+            margin-left: 5px;
+            font-size: 12px;
+            border: 1px solid purple;
+            border-radius: 5px;
+        }
+
+        .search-box button {
+            padding: 5px 10px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        .menu-icon {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .images-large {
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px 0;
+        }
+
+        .img-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        .img-wrapper {
+            position: relative;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .img-wrapper:hover {
+            transform: scale(1.05);
+        }
+
+        .img-square {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .img-rectangle {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .image-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .images-round {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .images-round img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+
+        .images-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .images-list img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .text-next-to-image {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .text-next-to-image p {
+            margin-left: 10px;
+        }
+
+        .text-next-to-image h3 {
+            color: purple;
+            margin: 0;
+        }
+
+        .line-veja-mais {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .line-veja-mais div {
+            background-color: yellow;
+            padding: 10px 20px;
+            border-radius: 5px;
+            position: relative;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .line-veja-mais div::before,
+        .line-veja-mais div::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            height: 1px;
+            background-color: yellow;
+            width: 50%;
+            z-index: -1;
+        }
+
+        .line-veja-mais div::before {
+            left: -50%;
+        }
+
+        .line-veja-mais div::after {
+            right: -50%;
+        }
+
+        footer {
+            background-color: yellow;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer h2 {
+            margin: 0;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+        }
+
+        footer hr {
+            height: 2px;
+            background-color: purple;
+            border: none;
+        }
+    </style>
 </head>
 <body>
 
