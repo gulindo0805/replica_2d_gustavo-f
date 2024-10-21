@@ -200,6 +200,23 @@
     color: white; /* Cor do texto "veja mais" em branco */
 }
 
+.line-veja-mais div::before,
+.line-veja-mais div::after {
+    content: ""; /* Adiciona pseudo-elementos */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    height: 1px; /* Altura da linha */
+    background-color: yellow; /* Cor da linha */
+    width: 150%; /* Aumenta a largura da linha para ser maior */
+}
+
+.line-veja-mais div::before {
+    left: -150%; /* Move a linha para a esquerda (mais distante) */
+}
+
+.line-veja-mais div::after {
+    right: -150%; /* Move a linha para a direita (mais distante) */
+}
 
 
         footer {
