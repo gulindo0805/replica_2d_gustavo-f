@@ -177,40 +177,25 @@
             color: purple; /* Cor do título em roxo */
             margin: 0; /* Remove a margem padrão */
         }
-.line-veja-mais {
+.container {
+    padding: 20px; /* Adiciona um espaçamento em volta do conteúdo da galeria */
+}
+
+.images-list {
     display: flex;
-    justify-content: center;
-    margin: 20px;
+    flex-direction: column;
+    align-items: start;
+    margin: 30px 0; /* Aumenta o espaçamento vertical */
 }
 
-.line-veja-mais div {
-    background-color: yellow; /* Cor de fundo da linha */
-    padding: 20px 20px; /* Espaçamento interno da linha */
-    border-radius: 5px; /* Bordas arredondadas */
-    position: relative; /* Permite o uso de pseudo-elementos */
-    font-weight: bold; /* Deixa o texto mais grosso */
-    font-size: 16px; /* Tamanho do texto */
-    color: white; /* Cor do texto "veja mais" em branco */
+.images-list img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px; /* Aumenta o espaço entre as imagens */
+    padding: 10px; /* Adiciona um espaçamento interno para as imagens em relação às bordas */
+    border: 2px solid #ccc; /* Opcional: adicionar borda às imagens */
 }
-
-.line-veja-mais div::before,
-.line-veja-mais div::after {
-    content: ""; /* Adiciona pseudo-elementos */
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente */
-    height: 1px; /* Altura da linha */
-    background-color: yellow; /* Cor da linha */
-    width: 150%; /* Aumenta a largura da linha para ser maior */
-}
-
-.line-veja-mais div::before {
-    left: -150%; /* Move a linha para a esquerda (mais distante) */
-}
-
-.line-veja-mais div::after {
-    right: -150%; /* Move a linha para a direita (mais distante) */
-}
-
 
         footer {
             background-color: yellow;
