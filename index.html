@@ -150,19 +150,25 @@
             margin-right: 10px;
         }
 
-        .images-list {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            margin: 20px 0;
-        }
+.container {
+    padding: 20px; /* Adiciona um espaçamento em volta do conteúdo da galeria */
+}
 
-        .images-list img {
-            width: 300px;
-            height: 250px;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
+.images-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 30px 0; /* Aumenta o espaçamento vertical */
+}
+
+.images-list img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px; /* Aumenta o espaço entre as imagens */
+    padding: 10px; /* Adiciona um espaçamento interno para as imagens em relação às bordas */
+    border: 2px solid #ccc; /* Opcional: adicionar borda às imagens */
+}
 
         .text-next-to-image {
             display: flex;
